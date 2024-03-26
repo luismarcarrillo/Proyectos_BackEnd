@@ -1,0 +1,301 @@
+
+
+body {
+ font-family: "Bevan", serif;
+}
+
+header {
+ background-color: #BBBBBB;
+ padding: 20px 0; /*  Espaciamiento interno */
+}
+
+.caja { 
+ width: 940px; /* Ancho de el elemento o el bloque*/ 
+ position: relative; /* relativa a la posiscion absoluta definida anteriormenet*/
+ margin: 0 auto; /* marquenes superior e inferior en 0 y izquierdo y derecha automaticos para  ventrar elementos del div */
+}
+
+
+nav li { 
+display: inline; /*  para alienar elementos el linea, biene por defecto en bloque */
+margin: 0 0 0 15px /* definimos los margenes en 0 pero el izquierdo en 15 px*/
+}
+
+nav a { 
+  text-transform: uppercase; /* Para colocar el texto en mayuscula sostenida*/ 
+  color:black;
+  font-weight: bold; /* especificamos el peso o grososlr de la fuente*/
+  font-size: 22px;
+  text-decoration: none; /* quitamos cualquier cdecoracion por defecto*/ 
+}
+
+nav a:hover {  
+ color: #c78c19;
+ text-decoration: underline;
+} /* capta el movimiento del maus en el nav a al pasar el maus por ahi*/
+
+/*AY DESACTIVAR MUCHAS LIMITACIONES QUE EL NAVEGADOR PONE POR DEFECTO A NUESTRAS PAGINAS  */
+nav {
+ position: absolute; 
+ top: 110px;
+ right: 0;
+}
+
+.Productos {
+  width: 950px;
+  margin: 0 auto;
+  padding: 50px
+}
+
+.Productos li {
+   display: inline-block; /* ajusta el tamaño al contenido*/
+   text-align: center;
+   width: 30%;
+   vertical-align: top;
+   margin: 0 1.5%;
+   padding: 30px 20px; /* Espaciameinto interno */
+   box-sizing: border-box; /* tammaño de la caja igual al borde de la caja*/
+   border: 2px solid #000000; /*  definimos las propiedades del borde */
+   border-radius: 25px 25px 25px 25px; /* Definir radio de las partes esquinas de los cuadros etc */
+}
+
+.Productos h2 {
+   font-size: 30px;
+   font-weight: bold; 
+}
+
+.Productos li:hover h2 { /* para cuando se esta encima del elemento */
+   font-size: 33px
+}
+
+.Producto-descripcion {
+    font-size: 18px;
+}
+
+.Producto-Precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+} 
+
+.Productos li:hover {
+    border-color: aqua;
+}
+
+.Productos li:active {
+    border-color: red;
+}
+footer {
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+.Last {
+    color: aliceblue;
+    font-size: 20px;
+    margin: 20px;
+}
+
+
+form {
+ margin: 40px 0;
+}
+
+form label, form legend {
+ display: block;
+ font-size: 20px;
+ margin: 0 0 10px;
+}
+
+.input-padron {
+  display: block;
+  margin: 0 0 10px;
+  padding: 10px 25px; /* Sirve para cambiar el espacio interno entre el contenido y el borde */
+  width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+} 
+
+.Enviar {
+width: 40%;
+padding: 15px 0 ;
+font-size: 18px;
+font-weight: bold;
+color: white;
+background-color: #c78c19;
+border: none;
+border-radius: 5px;
+transition:  2s all;
+cursor: pointer;
+} 
+
+.Enviar:hover {
+    background: red;
+    transform: scale(1.2);
+}
+
+table {
+    margin: 40px 40px;
+}
+
+thead { 
+    background: #555555;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+td,th {
+    border: 1px solid #000000;
+    padding: 8px;
+}
+
+
+/*
+
+Existe una gerarquia en css en como se comporta en funcion a los distintos marcadores
+
+0. declarar el estilo en inline 1000
+1. ID 100
+2. Class 10
+3. etiqueta  1
+
+y tambien se pueden sumar pesos mesclando marcadores 
+
+*/
+/* css del home */
+
+
+.banner {
+    width:100%;
+}
+
+.principal{
+ background-color: #fefefe;
+ padding: 3em 0;
+ width: 940px;
+ margin: 0 auto;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.titulo-principal:first-letter{ /* Pseudo elementos para acceder a elemntos mas concretos sin tener que complejizar sin tener que fraccionar mas el codigo */
+    font-weight: bold;
+}
+
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong {
+  font-weight: bold;
+}
+
+.principal em{
+ font-style: italic;
+}
+
+
+.utencilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0; 
+}
+.mapa p {
+
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido{
+ width: 940px;
+ margin: 0 auto;
+}
+
+.mapa {
+    padding: 3em 0;  
+    background: linear-gradient(#fefefe,#555555) /* linear gradient puede definir tambien n colores
+     en diferentes grados y proporciones tambien podemos colocar diferentes figuras de apariencia del 
+     color */
+}
+
+.Last {
+    width: 100%;
+}
+
+.video {
+    width: 560px;
+    margin: 1em auto ;
+}
+
+.diferenciales{
+
+    padding: 3em 0;
+    background: #555555;
+
+}
+
+.contenidos-diferenciales {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.imagenDiferenciales{
+    width: 60%;
+    transition: 400ms ;
+    box-shadow: 10px 10px 30px 15px  #000000; /* para agregar sombras a los elemtos que quieras shadow-lo que quieres afectar */
+}
+
+.imagenDiferenciales:hover{
+    opacity: 0.3;
+}
+
+.Items{
+    line-height: 1.5;
+}
+
+.Items:first-child{
+font-weight: bold;
+}
+
+.Items:before{
+ content:'★';
+}
+/* RESPONSIBIDAD
+
+que la pagina se comporte de manera correcta en cualquier dispositivo movil sea adaptable 
+puedes mirar resposibidad con consola en diferentes modelos moviles
+
+*/
+
+@media screen and (max-with:480px){
+
+    h1{ 
+     text-align: center;
+    }
+    nav{
+        position: static;
+    }
+
+  .caja, .principal, .mapa-contenido, .contenidos-diferenciales, .video{
+     width: auto; 
+    }
+
+    .lista-diferenciales, .imagenDiferenciales {
+        width: 100%;
+    }
+}

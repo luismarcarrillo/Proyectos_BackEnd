@@ -1,0 +1,64 @@
+
+p{
+ text-align: center;
+} 
+
+em strong{
+color: aqua;
+}
+
+h1{
+ text-align: center;
+ height: 150 px;
+}
+
+#Mision{
+ font-size: 20px ;
+}
+
+.titulo-principal{
+padding-left: 30px ;
+}
+
+#Banner{
+ width: 100%;
+}
+
+.principal{
+    padding: 20px; /* Espacimiento interno  */
+ background: #9b9b9b;
+}
+
+.diferenciales{
+ padding: 20px;
+ background: #ffffff;
+}
+
+.titulo-centralizado{
+
+    text-align: center;
+}
+
+h3{
+ text-align: center;
+}
+
+.Items{
+ font-style: italic;
+}
+
+ul{
+ display: inline-block; /* Alteramos como se ve un elemento en la web  que ocupe solo el espacio de su contenido  y que todos los espaciamientos puedan ser ajustables, con la propiedad ajustamos que el interlineado sea en bloque */
+ vertical-align: top;
+ width: 20%;
+ margin-right: 15%;
+}
+
+.imagenDiferenciales{
+
+ width: 50%;
+
+} 
+ /*  Css par anuestra home */ 
+
+ 
